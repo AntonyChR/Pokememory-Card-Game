@@ -1,0 +1,79 @@
+:root{
+    --yellow: #f7c406;
+    --blue: #386abb;
+    --dark-blue: #1e3b71;
+    --red: #D61313;
+    --black:#222224;
+    --white: #f0f0f0;
+}
+*,
+*::before,
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+
+}
+.bg_wall{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("../assets/img/bg_wallpaper.jpg");
+    filter: blur(2px);
+}
+
+.card{
+    width: 200px;
+    height: 200px;
+    border: 2px solid var(--black);
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform .3s;
+}
+
+.card--show{
+    transform: rotateY(180deg);
+    
+}
+.card__front,
+.card__back{
+    backface-visibility: visible;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+.card__back{
+    background-image:linear-gradient(
+        var(--red) 48.5%,
+        var(--black) 40.5%,
+        var(--black) 52.5%,
+        var(--white) 52.5%
+        ) ;
+}
+.card__back::before{
+    content: '';
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background-color: var(--white);
+    border: 7px solid var(--black);
+    border-radius: 50%;
+    
+}
+.card__img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.card__front{
+    background-color: lightblue;    
+    transform: rotateY(180deg);
+    pointer-events: none;
+}
+
