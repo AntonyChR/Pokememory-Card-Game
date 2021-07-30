@@ -5,6 +5,8 @@
     --red: #D61313;
     --black:#222224;
     --white: #f0f0f0;
+    --card-width: 170px;
+    --card-height: 200px;
 }
 *,
 *::before,
@@ -15,18 +17,20 @@ body{
     margin: 0;
 
 }
+/* background */
 .bg_wall{
     position: absolute;
     height: 100%;
     width: 100%;
     background-image: url("../assets/img/bg_wallpaper.jpg");
     filter: blur(2px);
+    z-index: -1;
 }
 
+/* card design */
 .card{
-    width: 200px;
-    height: 200px;
-    border: 2px solid var(--black);
+    width:var(--card-width);
+    height: var(--card-height);
     position: relative;
     transform-style: preserve-3d;
     transition: transform .3s;
@@ -77,3 +81,11 @@ body{
     pointer-events: none;
 }
 
+/* card set content */
+
+.cards-container{
+    border: solid 2px black;
+    width: calc(var(--card-width)*5);
+    height: calc(var(--card-height)*3);
+
+}
