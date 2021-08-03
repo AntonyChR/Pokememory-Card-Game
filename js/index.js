@@ -6,7 +6,7 @@ import checkMatch from "./checkMatch.js"
 const pokemons = generatePokemons(6);
 drawPokecards(pokemons);
 
-const $allCards = document.getElementsByClassName("card"),
+const $allCards = document.getElementsByClassName("card");
 var $cardSelectedA = undefined,
     $cardSelectedB = undefined;
 document.addEventListener("click", e =>{
