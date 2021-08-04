@@ -3,6 +3,7 @@ import generatePokemons from "./generatePokemons.js";
 import gameCompleted from "./gameCompleted.js";
 import fireworks from "./fireworks.js";
 import checkMatch from "./checkMatch.js"
+
 const pokemons = generatePokemons(6);
 drawPokecards(pokemons);
 
@@ -16,6 +17,7 @@ document.addEventListener("click", e =>{
     ){
         let $clickedCard = e.target.parentElement;
         $clickedCard.classList.add("card--show");
+        document.querySelector(".turn-card__sound").play()
         if($cardSelectedA == undefined){
             $cardSelectedA = $clickedCard;
         }else{
