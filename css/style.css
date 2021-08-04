@@ -28,6 +28,9 @@ body{
     z-index: -1;
 }
 
+.main{
+    padding-top: 25px;
+}
 /* card design */
 .card{
     width:var(--card-width);
@@ -85,11 +88,15 @@ body{
 /* card set content */
 
 .cards-container{
-    border: solid 2px black;
     width: calc(var(--card-width)*4 + (5px * var(--num-v-cards)));
     height: calc(var(--card-height)*3 + (5px * var(--num-h-cards)));
     display: flex;
     flex-flow: row wrap;
     gap: 5px;
     margin: 0 auto;
+}
+
+#gif-container{
+    display: flex;
+    position: absolute;
 }
