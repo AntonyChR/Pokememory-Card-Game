@@ -18,6 +18,65 @@
 body{
     margin: 0;
 }
+/* start screen */
+.start-screen{
+    background-image: url("../assets/img/bg_wallpaper.jpg");
+    z-index: 999;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-name_container{
+    border: solid 4px white;
+    width: 550px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    background: rgba(255,255,255,0.25);
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    backdrop-filter: blur(4.5px);
+    border-radius: 30px;
+    padding: 0 15px 0 15px;
+}
+.img-container{
+    width:  200px;
+    height: 200px;
+    margin: 5px;
+}
+.gif{
+    width: 100%;
+    height: 100%;
+}
+.nick-name_form{
+    width: 300px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#input-name{
+    border-style: none;
+    border-bottom: 1px solid black;
+    text-align: center;
+    width: 100%;
+
+}
+#input-name:focus{
+    outline-style:none;
+}
+.nick-name_form > *{
+    font-size: 2rem;
+    margin: 5px;
+}
+.button-name{
+    border-style: none;
+    border-radius: 15px;
+    padding: 10px 10px 10px 10px;
+    cursor: pointer;
+}
 /* background */
 .bg_wall{
     position: absolute;
@@ -99,4 +158,7 @@ body{
 #gif-container{
     display: flex;
     position: absolute;
+}
+.hidden{
+    display: none;
 }
