@@ -1,3 +1,4 @@
 /node_modules
 Public/index.js.LICENSE.txt
 Public/index.js
+src/firebase/firebaseConfig.js
