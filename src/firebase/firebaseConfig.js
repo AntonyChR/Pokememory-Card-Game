@@ -2,8 +2,8 @@ import { initializeApp } from "@firebase/app";
 import { getFirestore } from "@firebase/firestore";
 
 const firebaseConfig = {
-/* 
-    --------> firebase configuratoin <-------------
+/*  
+    ------------> firebase configuration <----------------  
     apiKey
     authDomain
     projectId
