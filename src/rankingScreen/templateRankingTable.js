@@ -1,5 +1,5 @@
 const templateRankingtable = `
-        <div class="scores-container ">
+        <div class="scores-container animate__animated animate__backInDown">
             <table class="scores_table">
                 <thead class="header-table">
                     <tr>
@@ -10,6 +10,7 @@ const templateRankingtable = `
                     <tbody class="body-table">
                     </tbody>
             </table>
+            <div><a href = "/">Try Again</a></div>
         </div>
 `;
 
