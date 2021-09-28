@@ -9,7 +9,7 @@ export const startScreen = new Promise((resolve, reject) => {
         e.preventDefault();
         let nickName = document.querySelector("#input-name").value;
         if (nickName) resolve(nickName);
-        else reject("xd");
+        else reject('error');
         document.removeEventListener("submit", getName);
     };
 

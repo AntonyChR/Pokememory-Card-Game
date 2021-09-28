@@ -10,7 +10,7 @@ const templateRankingtable = `
                     <tbody class="body-table">
                     </tbody>
             </table>
-            <div><a href = "/">Try Again</a></div>
+            <div class='try-again_btn'><a href = "/">Try Again</a></div>
         </div>
 `;
 
