@@ -1,7 +1,7 @@
 import { getScores } from "../firebase/getScores";
 import templateRankingtable from "./templateRankingTable";
 
-export const rankingScreen =async() =>{
+export const rankingScreen = async () =>{
     const $rankingContainer = document.createElement('div');
     $rankingContainer.classList.add("end-screen");
     $rankingContainer.classList.add("hidden");

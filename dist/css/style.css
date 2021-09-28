@@ -215,3 +215,17 @@ body{
 .hidden{
     display: none;
 }
+.try-again_btn{
+    font-family: Pokemon Solid;
+    text-align: center;
+}
+.try-again_btn a{
+    text-decoration: none;
+    color: var(--yellow);
+    text-shadow: -3px 4px 0px #000000;
+    transition:.2s ease;
+}
+.try-again_btn a:hover{
+    transform: scale(1.2);
+
+}
